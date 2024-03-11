@@ -1,10 +1,17 @@
-const user = {
-  avatar: String,
-  first_name: String,
-  last_name: String,
-  email: String,
-  id: Number,
-}
+/**
+ * @typedef {Object} User
+ * @property {string} avatar - User's avatar URL
+ * @property {string} first_name - User's First Name
+ * @property {string} last_name - User's Surname
+ * @property {string} email - User's Email
+ * @property {number} id - Unique User's ID
+ */
+
+/**
+ * Creates User's card HTML-element based on data received
+ * @param {User} user - User's data
+ * @returns {HTMLDivElement} - User card HTML-element
+ */
 
 export const createUserCard = (user) => {
   const userCardContainer = document.createElement('div');
